@@ -1,0 +1,17 @@
+#header-logo{
+    margin-left: 40px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.header-nav{
+    margin-right: 40px;
+    
+}
+
+#nameApp {
+    align-items: center;
+    text-align: center;
+    color: rgb(4, 12, 85);
+}
