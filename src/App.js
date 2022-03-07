@@ -1,13 +1,18 @@
-import React from 'react';
 import Home from "./components/home/Home";
-const data = require('./data/data.json');
+import TourDetails from "./components/TourDetails/TourDetails"
+import { Routes, Route } from "react-router-dom";
+import React from "react";
+import data from "./data/data.json"
 
 
 function App() {
     return (
-    <>
-        <Home data = {data}/>
-    </> 
+        <>
+            <Routes>
+                <Route path="/" element={<Home data={data} />} />
+                <Route path="/city/:id" element={<TourDetails data={data} />} />
+            </Routes>
+        </>
     );
 }
 
